@@ -1,0 +1,1 @@
+Zareklamuj swoj serwer counter strike lub siec serwerow. Za pomoca naszego programu zrobisz to bez problemu.
