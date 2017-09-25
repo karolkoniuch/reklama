@@ -1,0 +1,292 @@
+* { padding: 0; margin: 0; }
+
+body {
+ font-family: Verdana;
+ font-size: 12px;
+ background-color: #101010;
+ color: #7b7d7b;
+}
+
+a {
+	color: #ef5d21;
+	text-shadow: 0 0 0.1em #000, 0 0 0.1em #000,
+        0 0 0.1em #000;
+		text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+textarea#styled {
+	background-color : #181818;
+	border: 1px solid #2a292a;
+	width: 600px;
+	height: 220px;
+	color: #ef5d21;
+}
+
+input.text{
+	background-color : #181818;
+	border: 1px solid #2a292a;
+	width: 166px;
+	height: 28px;
+	color: #ef5d21;
+	}
+	
+input.button
+{
+	background-color : #181818;
+	border: 1px solid #2a292a;
+	color: #ef5d21;
+	}
+	
+
+#wrapper { 
+ margin: 0 auto;
+ width: 962px;
+}
+#glowny {
+ margin-bottom: 5px;
+ overflow: auto; /* Paul O Brien Fix for IE www.pmob.co.uk */
+ width: 100%
+}
+#header {
+ color: #333;
+ width: 952px;
+ height: 126px;
+ margin: 10px 0px 5px 0px;
+ background: #101010;
+}
+#footer { 
+ width: 962px;
+ clear: both;
+ color: #333;
+ background: #181818;
+ padding: 5px;
+ border: 1px solid #212021;
+ color: #7b7d7b;
+ font-size: 12px;
+}
+
+#panel_lewa {
+float: left;
+width: 266px;
+margin-top: 10px;
+}
+
+#panel_prawa {
+float: right;
+width: 679px;
+margin-top: 10px;
+}
+
+.lewa {
+background: url(../images/lewa.png) no-repeat 0 0;
+height: 50px;
+}
+.prawa {
+background: url(../images/prawa.png) no-repeat 100% 0;
+height: 50px;
+}
+.srodek {
+background: #151515 url(../images/srodek.png) repeat-x 0 0;
+height: 50px;
+}
+
+.info, .success, .warning, .error {
+    border: 1px solid;
+    margin: 15px 0px;
+    padding:15px 20px 15px 55px;
+    width: 500px;	
+    font: bold 12px verdana;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+    text-shadow: 2px 2px 2px #ccc;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+.info {
+    color: #00529B;
+    background: #BDE5F8 url('../images/info.png') no-repeat 10px center;
+}
+.success {
+    color: #4F8A10;
+    background: #DFF2BF url('../images/success.png') no-repeat 10px center;
+}
+.warning {
+    color: #9F6000;
+    background: #FEEFB3 url('../images/warning.png') no-repeat 10px center;
+}
+.error {
+    color: #D8000C;
+    background: #FFBABA url('../images/error.png') no-repeat 10px center;
+}
+
+.validation {
+color: #D63301;
+background-color: #FFCCBA;
+background-image: url('../images/validation.png');
+}
+.bottomlewa {
+background: url(../images/bottom_lewa.png) no-repeat 0 0;
+height: 3px;
+}
+.bottomprawa {
+background: url(../images/bottom_prawa.png) no-repeat 100% 0;
+height: 3px;
+}
+.bottomsrodek {
+background: #151515 url(../images/bottom_srodek.png) repeat-x 0 0;
+height: 3px;
+margin-bottom: 10px;
+}
+
+.bgie {
+	background: #212021 none repeat-x 0 0;
+	padding: 0 1px;
+	clear: both;
+	padding: 5px;
+}
+
+.nazwa_forum {
+	margin-left: 20px;
+	line-height: 48px;
+	font-size: 14px;
+	color: #ef5d21;
+	text-shadow: 0 0 0.2em #000, 0 0 0.2em #000,
+        0 0 0.2em #000;
+			font-family: Verdana;
+			
+}
+
+.stopa {
+	color: #ef5d21;
+	text-shadow: 0 0 0.2em #000, 0 0 0.2em #000,
+        0 0 0.2em #000;
+			font-family: Verdana;
+			
+}
+
+.nav {
+	background: #fff url(../images/nav_bg.png) repeat-x;
+	float: left;
+	width: 962px;
+	border: 1px solid #212021;
+
+}
+
+
+.nav ul {
+	/*width: 648px;*/
+
+	height: 38px;
+	float: left;
+	margin: 0;
+	padding-top: 3px;
+	list-style: none;
+	font-size: 14px;
+	font-family: Verdana;
+
+}
+.nav li {
+	float: left;
+	padding: 0 7px;
+	position: relative;
+	z-index: 1;
+
+}
+
+.nav li:hover {
+	z-index:2;
+}
+.nav li a {
+	display: block;
+	line-height: 38px;
+	overflow: hidden;
+	float: left;
+	color: #ef5d21;
+	text-shadow: 0 0 0.2em #000, 0 0 0.2em #000,
+        0 0 0.2em #000
+}
+a .menu-left {
+	background: url(../images/menu_left.gif) no-repeat left top;
+	width: 8px;
+	height: 32px;
+	line-height: 35px;
+	display: block;
+	float: left;
+}
+a .menu-mid {
+	background: url(../images/menu_mid.gif) repeat-x top left;
+	height: 32px;
+	line-height: 35px;
+	display: block;
+	float: left;
+}
+a .menu-right {
+	background: url(../images/menu_right.gif) no-repeat top left;
+	width: 8px;
+	height: 32px;
+	line-height: 35px;
+	display: block;
+	float: left;
+}
+.nav li a:hover .menu-left,
+.nav li.active a .menu-left,
+.nav li:hover a .menu-left,
+.nav li a:hover .menu-mid,
+.nav li.active a .menu-mid,
+.nav li:hover a .menu-mid,
+.nav li a:hover .menu-right,
+.nav li.active a .menu-right,
+.nav li:hover a .menu-right {
+	background-position: 0 -37px;
+	line-height: 35px;
+}
+.nav li a:hover,
+.nav li.active a,
+.nav li.hover a,
+.nav li:hover a {
+	color: #000000;
+	text-shadow: none;
+}
+.nav li:hover .sub,
+.nav li.hover .sub {
+	display:block;
+}
+
+
+.nav li:hover li,
+.nav li.active li {
+	width: 100%;
+	padding: 1px 0 2px;
+	border-bottom: 1px #C1D9F0 dashed;
+	background: none !important;
+}
+.nav li:hover li a,
+.nav li.active li a {
+	color: #09548B;
+	background: none !important;
+	line-height: normal;
+	width: 156px;
+	padding: 8px 3px 3px;
+	text-indent: 1px;
+}
+.nav li:hover li a:hover,
+.nav li.active li a:hover {
+	color: #fff;
+	background: #165B9F !important;
+	text-decoration: none;
+	line-height: normal;
+}
+/*IE*/
+.nav li li a:hover,
+.nav li li a:hover {
+	color: #fff;
+	background: #165B9F !important;
+	text-decoration: none;
+	line-height: normal;
+}
+/**/

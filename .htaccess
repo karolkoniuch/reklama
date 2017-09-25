@@ -1,0 +1,27 @@
+AddDefaultCharset UTF-8
+Options -Indexes
+Options FollowSymLinks
+AddType application/x-httpd-php52 .php
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www.csposter.pl(.*) [NC]
+RewriteRule ^(.*)$ http://csposter.pl/$1 [R=301,L]
+
+# GLOWNE
+RewriteRule ^kontakt$ index.php?id=kontakt [L]
+RewriteRule ^faq$ index.php?id=faq [L]
+RewriteRule ^logi$ index.php?id=logi [L]
+RewriteRule ^poleceni$ index.php?id=ref [L]
+RewriteRule ^logi$ index.php?id=logi [L]
+RewriteRule ^reklamuj$ index.php?id=reklama [L]
+RewriteRule ^doladuj$ index.php?id=kup [L]
+RewriteRule ^java$ index.php?id=java [L]
+RewriteRule ^linki/([^-]+)$ index.php?id=pokaz&pokaz=$1 [L]
+
+# rejestracja itp
+
+RewriteRule ^rejestracja$ register.php [L]
+RewriteRule ^haslo$ forgotpass.php [L]
+RewriteRule ^akcja$ process.php [L]
+RewriteRule ^edytuj$ useredit.php [L]
+
